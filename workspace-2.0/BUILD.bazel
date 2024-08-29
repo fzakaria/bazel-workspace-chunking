@@ -1,0 +1,6 @@
+genrule(
+    name = "version",
+    srcs = ["VERSION.txt"],
+    outs = ["VERSION"],
+    cmd = "cp $(SRCS) $(OUTS)",
+)
